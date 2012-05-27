@@ -1,68 +1,150 @@
-\documentclass[margin,11pt]{res} % default is 10 pt
-% margin option puts section titles to left of text
-%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
-%\usepackage{newcent}   % uses new century schoolbook postscript font
-
-\usepackage{hyperref} % for awesome hyperlinks
-
+%!TEX TS-program = xelatex
+\documentclass[]{friggeri-cv}
+\linespread{1.1}
 \begin{document}
-\name{BORIS PFAHRINGER\\[12pt]} % the \\[12pt] adds a blank line after name
+\header{boris}{pfahringer}
+       {computer science / math}
 
-\address{{\bf Address} \\ 7 Sutton Crescent  \\ Hamilton 3216\\
-        (027) 739-3946 \\ bpnzltd@gmail.com}
-\address{}
+% In the aside, each new line forces a line break
+\begin{aside}
+  \section{about}
+    7 Sutton Cres
+    Hamilton 3216
+    New Zealand
+    ~
+    \href{mailto:bpnzltd@gmail.com}{bpnzltd@gmail.com}
+    +64 7 856 9414
+  \section{languages}
+    bilingual english/german
+  \section{programming}
+    Java, Python, C
+    HTML, JS, CSS
+    {\color{red} $\varheartsuit$} Haskell
+\end{aside}
 
-\begin{resume}
+\section{profile}
 
-\section{EDUCATION}
-				2 Years at University of Waikato
-				towards a BCMS (Hons). \hfill GPA: 9.0/9.0 \\
-                Expected Date of Graduation: March, 2014 \\
-                \\
-                NCEA Level 3 with Excellence
+I'm a computer science and mathematics student at the University of Waikato.
+My direction academically is towards formal methods, algorithms and networks.
+I'm looking to develop as a programmer and to learn as much about developing
+sound robust software, and esoteric maths as I can.
 
+I have been involved with the \href{http://www.nzoi.org.nz/}
+{New Zealand Olympiad in Informatics}, competing twice at the International
+Olympiad in Informatics in Sofia, Bulgaria and Waterloo, Canada, being
+awarded a bronze medal at both. Since then I have volunteered annually at the
+NZOI's summer training and selection camp and helped local candidates in
+their contest preparations.
 
-\section{EXPERIENCE}
-                {\bf Anvil Labs, Hamilton, New Zealand} \\
-                \begin{ncolumn}{2} % produces two equally spaced columns
-                \underline{Part-time Software Developer}     & \hfill 02/11-
-                \end{ncolumn} \\
-                Construction and maintenance of the websites for clients.
-                Development of an internal database-driven product.
+Outside of Computer Science, I enjoy playing soccer at the Unicol Football
+Club for the men's Federation 1 team. I also regularly practise pilates and
+ballroom dancing.
 
-                {\bf University of Waikato, Hamilton, New Zealand} \\
-                \begin{ncolumn}{2} % produces two equally spaced columns
-                \underline{Seasonal Assistant} & \hfill 07/11-11/11
-                \end{ncolumn} \\
-                Marking assignments, labs and tests for students of the
-                paper COMP235.
+\section{education}
 
-                {\bf University of Waikato, Hamilton, New Zealand} \\
-                \begin{ncolumn}{2} % produces two equally spaced columns
-                \underline{Casual Assistant} & \hfill 08/10-10/10
-                \end{ncolumn} \\
-                Assist Dr. Matthew Luckie with development of
-                \href{http://www.wand.net.nz/scamper}{\tt{scamper}}
+\begin{entrylist}
+  \entry
+    {since 2010}
+    {BCMS \normalfont{candidate \footnotesize{(GPA: 9.0)}}}
+    {Waikato University}
+    {Majoring in Computer Science and Mathematics}
+\end{entrylist}
 
+\section{experience}
 
-\section{HONOURS}
-				Millennium Prize in Mathematics 2011 (Waikato) \\
-				University of Waikato Alumni Prize for Excellence \\
-				University of Waikato Summer Research Scholarship 2011, 2010 \& 2009 \\
-				Faculty of Computing and Mathematical Sciences Dean's Award for Excellence (Waikato) \\
-				Von Neumann Prize in Mathematics (Waikato) \\
-				Computer Science Entrance Scholarship (Waikato) \\
-				Outstanding NZQA Scholarship Physics \\
-				Outstanding NZQA Scholarship Chemistry \\
-				NZQA Scholarship Mathematics with Calculus \\
+\begin{entrylist}
+  \entry
+    {since 2011}
+    {Part-time Software Developer.}
+    {Anvil Labs, Hamilton}
+    {Construction and maintenance of promotional websites. (Python + HTML5)}
 
+  \entry
+    {2011--2012}
+    {Research Scholarship}
+    {University of Waikato, Hamilton}
+    {Develop a compiler and IDE for the research language
+    \href{http://www.cs.waikato.ac.nz/research/jstar/}{JStar}.
+    Developed using Java and Xtext, currently being used to teach
+    \href{http://papers.waikato.ac.nz/subjects/COMP/COMP553}
+    {Extremely Parallel Programming} at Waikato.}
 
-\section{ACTIVITIES}
-				Computer Science Students' Committee Member \\
-				Volunteer for NZOI Summer Training Camp \\
-				Ballroom, Latin and Salsa Dancing \\
-				Football for UNICOL \\
+  \entry
+    {07--11 2011}
+    {Seasonal Assistant}
+    {University of Waikato, Hamilton}
+    {Marking assignments, tests, and tutoring students during
+    practical lab sessions in the paper
+    \href{http://papers.waikato.ac.nz/subjects/COMP/COMP235}
+    {Logic and Computation}.}
 
+  \entry
+    {08--10 2010}
+    {Research Programmer}
+    {University of Waikato, Hamilton}
+    {Development on
+    \href{http://www.wand.net.nz/scamper}{scamper},
+    an open source network testing and mapping tool. (C)}
+\end{entrylist}
 
-\end{resume}
+\section{honours}
+\begin{entrylist}
+  \titleentry
+    {2011}
+    {Millennium Prize in Mathematics}
+    {University of Waikato}
+
+  \titleentry
+    {2011}
+    {Prize for Excellence}
+    {UoW Alumni Association}
+
+  \titleentry
+    {2009--2011}
+    {Summer Research Scholarship}
+    {University of Waikato}
+
+  \titleentry
+    {2010--2011}
+    {Dean's Award for Excellence}
+    {University of Waikato}
+
+  \titleentry
+    {2010}
+    {Von Neumann Prize in Mathematics}
+    {University of Waikato}
+
+  \titleentry
+    {2009--2010}
+    {Two Bronze Medals}
+    {International Olympiad in Informatics}
+
+  \titleentry
+    {2009}
+    {Computer Science Entrance Scholarship}
+    {University of Waikato}
+
+  \titleentry
+    {2009}
+    {Outstanding Scholar Award}
+    {New Zealand Qualifications Authority}
+\end{entrylist}
+
+\section{referees}
+
+\referee
+  {Margot Phillips}
+  {Executive Director, NZOI Inc.}
+  {email: \href{mailto:margot.phillips@gmail.com}{margot.phillips@gmail.com}}
+
+\referee
+  {Mark Utting}
+  {Associate Professor, University of Waikato}
+  {phone: +64 7 838 4791,
+  email: \href{mailto:marku@cs.waikato.ac.nz}{marku@cs.waikato.ac.nz}}
+
+\referee
+  {Matthew Luckie}
+  {Researcher, CAIDA}
+  {email: \href{mailto:mjl@caida.org}{mjl@caida.org}}
 \end{document}

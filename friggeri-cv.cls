@@ -167,6 +167,23 @@
     #4\vspace{\parsep}%
   }\\}
 
+\newcommand{\titleentry}[3]{%
+  #1&\parbox[t]{11.8cm}{%
+    #2%
+    \hfill%
+    {\footnotesize\addfontfeature{Color=lightgray} #3}%
+  }\\}
+
+%%%%%%%%%%%%
+% Referees %
+%%%%%%%%%%%%
+
+\newcommand{\referee}[3]{%
+  {\headingfont\color{headercolor} #1}%
+  \hfill%
+  {\footnotesize\addfontfeature{Color=lightgray} #2}\\%
+  #3\\%
+}
 
 %%%%%%%%%%%%%%
 % Side block %
