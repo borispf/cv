@@ -119,6 +119,8 @@
 %%%%%%%%%%%%%
 \RequirePackage{parskip}
 
+\linespread{1.1}
+
 \newcounter{colorCounter}
 \def\@sectioncolor#1#2#3{%
   {%
