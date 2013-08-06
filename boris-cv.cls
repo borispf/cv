@@ -31,7 +31,7 @@
 \DeclareOption*{%
   \PassOptionsToClass{\CurrentOption}{article}%
 }
-\PassOptionsToClass{a4paper,11pt}{article}
+\PassOptionsToClass{a4paper,10pt}{article}
 \ProcessOptions\relax
 \LoadClass{article}
 
