@@ -74,7 +74,7 @@
 %%%%%%%%%
 
 \RequirePackage[quiet]{fontspec}
-\RequirePackage[math-style=TeX,vargreek-shape=unicode]{unicode-math}
+\RequirePackage[math-style=TeX]{unicode-math}
 
 \newfontfamily\bodyfont[]{Helvetica Neue}
 \newfontfamily\thinfont[]{Helvetica Neue UltraLight}
@@ -119,7 +119,7 @@
 %%%%%%%%%%%%%
 \RequirePackage{parskip}
 
-\linespread{1.1}
+\linespread{1.0}
 
 \newcounter{colorCounter}
 \def\@sectioncolor#1#2#3{%
@@ -159,6 +159,8 @@
 % List environment %
 %%%%%%%%%%%%%%%%%%%%
 
+\RequirePackage{setspace}
+
 \setlength{\tabcolsep}{0pt}
 \newenvironment{entrylist}{%
   \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}ll}
@@ -170,7 +172,7 @@
   #1&\parbox[t]{11.5cm}{%
     \textbf{#2}%
     \hfill%
-    {\footnotesize\addfontfeature{Color=lightgray} #3}\\%
+    {\footnotesize\addfontfeature{Color=lightgray}\setstretch{4} #3}\\%
     #4\vspace{\parsep}%
   }\\}
 

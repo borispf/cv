@@ -25,3 +25,5 @@
 *-blx.bib
 *.fdb_latexmk
 *.fls
+cv.xdv
+.*.lb
